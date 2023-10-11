@@ -2,10 +2,13 @@ from genericpath import isfile
 import re, fileinput, os
 
 # change this for file name regex name to delete
-file_name_regex = "(Japan|Beta|Demo)"
+file_name_regex = (
+    "(Japan|Beta|Demo|Taiwan|Germany|Hong Kong|France|Spain|Unl|Australia|Europe)"
+)
 
 # change this to directory of path of deletable files
-dir_path = os.path.abspath("")
+dir_path = os.path.abspath("/home/bens-desktop/Desktop/roms/Nintendo - Game Boy")
+
 # change directory
 os.chdir(dir_path)
 
